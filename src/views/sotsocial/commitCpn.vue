@@ -32,6 +32,8 @@
 
 <style scoped lang="less">
     .commit {
+        font-family: PingFang SC, PingFang SC-Medium;
+
         font-size: 14px;
         margin-right:40px;
         width: 300px;
@@ -43,6 +45,7 @@
         box-sizing: border-box;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.06);
         .makecase {
+            font-size: 14px;
             margin-bottom: 14px;
         }
         .collect{
@@ -61,13 +64,16 @@
                 background: #ffffff;
                 border: 1px solid #d9d9d9;
                 border-radius: 11px;
-                ::-webkit-input-placeholder{
+                &::placeholder{
+                    font-family: PingFang SC, PingFang SC-Medium;
                     color: #BFBFBF;
                     font-size: 12px;
                 }
 
             }
             textarea {
+                font-family: PingFang SC, PingFang SC-Bold;
+
                 width: 100%;
                 height: 110px;
                 opacity: 1;
@@ -78,6 +84,11 @@
                 outline: none;
                 box-sizing: border-box;
                 padding: 10px;
+                &::placeholder {
+                    font-family: PingFang SC, PingFang SC-Bold;
+                    color: #BFBFBF;
+                    font-size: 12px;
+                }
             }
 
         }
@@ -93,6 +104,7 @@
             outline: none;
             background: #191d6b;
             border-radius: 10px;
+            cursor: pointer;
         }
     }
 </style>

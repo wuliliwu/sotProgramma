@@ -5,6 +5,8 @@ Vue.use(VueRouter)
 import Home from "views/stoHme/Home";
 import sotBlog from "views/sotBlog/sotBlog";
 import sotSocial from "views/sotsocial/sotSocial";
+import blogContent from "views/blogcontent/blogContent";
+import sotScan from "views/sotscan/sotScan";
 const routes = [
   // {
   //   path: '/',
@@ -16,11 +18,27 @@ const routes = [
   //   name: 'sotBlog',
   //   component: sotBlog
   // },
+  // {
+  //   path: '/',
+  //   name: 'sotSocial',
+  //   component: sotSocial
+  // },
+
+  // {
+  //   path: '/',
+  //   name: 'blogContent',
+  //   component: blogContent
+  // },
+
+
   {
     path: '/',
-    name: 'sotSocial',
-    component: sotSocial
+    name: 'sotScan',
+    component: sotScan
   },
+  // sotScan
+
+
 
 
 

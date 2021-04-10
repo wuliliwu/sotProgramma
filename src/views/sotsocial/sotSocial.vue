@@ -1,6 +1,8 @@
 <template>
     <div class="social">
-        <sto-header></sto-header>
+        <sto-header>
+
+        </sto-header>
         <div class="allcontent">
             <div class="social-cnt">
                 <div class="titleLink">
@@ -128,15 +130,15 @@
         border-bottom: 4px solid #191d6b;
     }
     .allcontent {
-        font-family: "PingFang SC", Helvetica, Arial, sans-serif;
-
+        font-family: "PingFang SC", Helvetica, Arial, sans-serif!important;
         float: right;
         display: flex;
         margin-top: 40px;
+        margin-right: .02%;
 
     }
     .social-cnt {
-        /*margin-top: 40px;*/
+        font-family: PingFang SC, PingFang SC-Bold;
         padding: 0 30px 0 30px;
         box-sizing: border-box;
         font-size: 18px;
@@ -148,13 +150,15 @@
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.06);
         .titleLink {
+            font-family: PingFang SC, PingFang SC-Bold;
             height: 52px;
             padding: 0 30px;
+            font-size: 14px;
             box-sizing: border-box;
             border-bottom: 1px solid #efefef;
             ul li {
                 float: left;
-                padding: 9px 20px 14px 20px;
+                padding: 18px 20px 14px 20px;
             }
         }
         .msgbox {
@@ -164,10 +168,9 @@
                 width: 48px;
                 height: 100px;
                 margin: 0 30px;
-                /*background-color: #e0d8d8;*/
+
                 .digital {
                     display: inline-block;
-                    /*background-color: pink;*/
                     width: 48px;
                     height: 48px;
                     line-height: 48px;
@@ -179,11 +182,12 @@
                 }
             }
             .msg-desc {
+
                 display: flex;
                 flex-direction: column;
                 .resolve {
                     margin-top: 20px;
-                    /*margin-bottom: 30px;*/
+
                 }
 
             }
@@ -192,14 +196,15 @@
             padding-top: 30px;
             padding-bottom: 35px;
             box-sizing: border-box;
-            /*background-color: pink;*/
             .sTitle{
+                font-family: PingFang SC, PingFang SC-Bold;
                 font-size: 16px;
                 margin-bottom: 8px;
-                font-weight: bold;
+                font-weight: 800;
             }
 
             .sCntdesc span {
+                font-family: PingFang SC, PingFang SC-Bold;
                 font-size: 13px;
                 color: #8b93a7;
             }

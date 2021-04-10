@@ -1,0 +1,100 @@
+{
+  "id": "2477249",
+  "name": "sot",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20909977",
+      "name": "Frame_1",
+      "font_class": "Frame_1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "20909978",
+      "name": "Frame_3",
+      "font_class": "Frame_3",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "20909979",
+      "name": "Frame",
+      "font_class": "Frame",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "20909980",
+      "name": "Frame_2",
+      "font_class": "Frame_2",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "20909982",
+      "name": "Polygon1",
+      "font_class": "Polygon1",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "20909983",
+      "name": "Polygon2",
+      "font_class": "Polygon2",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "20909984",
+      "name": "17741",
+      "font_class": "zu17741",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "20909985",
+      "name": "Polygon3",
+      "font_class": "Polygon3",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "20909986",
+      "name": "17742",
+      "font_class": "zu17742",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "20909987",
+      "name": "17740",
+      "font_class": "zu17740",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "20909988",
+      "name": "17744",
+      "font_class": "zu17744",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "20909989",
+      "name": "17743",
+      "font_class": "zu17743",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "20909990",
+      "name": "组 17745",
+      "font_class": "zu17745",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    }
+  ]
+}
