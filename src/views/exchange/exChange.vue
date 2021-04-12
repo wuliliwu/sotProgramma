@@ -24,7 +24,10 @@
             </el-table-column>
             <el-table-column
                     prop="name"
+                    :render-header="renderHeader"
                     label="资产流动性">
+
+
             </el-table-column>
             <el-table-column
                     prop="amount1"
@@ -60,6 +63,7 @@
     name: "exChange",
     data() {
       return {
+        // 表格的数据
         tableData: [{
           id: 'ETH/USDT',
           name: '$23.2345',
@@ -96,7 +100,8 @@
           amount1: '$4.1125',
           amount2: 15,
           amount3: '$123,123.1234'
-        },]
+        },],
+        flowsrc:'url'//显示图标的地址
       };
     },
     components: {
@@ -110,13 +115,28 @@
         } else if (rowIndex === 3) {
           return 'success-row';
         }
-        return '';
+        return '~assets/exchangeImg/flowup.png';
       },
       headRowClass({row, column, rowIndex, columnIndex}){
         //表头的背景颜色
         if(rowIndex==0){
           return 'background:#eeeeee'
         }
+      },
+      renderHeader(createElement, { column }) {
+        return createElement("div", [
+          createElement("span", column.label),
+          createElement("span", {
+            domProps: {
+              innerHTML: `<img src="${this.flowsrc}" style="width: 14px">`
+            },
+            style: {
+              // color: "red",
+              fontSize: "16px",
+              marginLeft: "5px"
+            }
+          })
+        ]);
       },
     }
   }
