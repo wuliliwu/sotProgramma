@@ -1,7 +1,8 @@
 <template>
-    <div class="sotscsan">
-        <sto-header>
-            <li slot="slot1"><a href="#">首页</a></li>
+
+    <div style="font-size: 14px">
+        <sto-header class="hea">
+            <li slot="slot1" class="lis"><a href="#">首页</a></li>
             <li slot="slot2"><a href="#">交易对</a></li>
             <li slot="slot3"><a href="#">代币</a></li>
             <li slot="slot4"><a href="#">Layer <i class="iconfont iconFrame_3"></i></a></li>
@@ -12,77 +13,167 @@
                     <input type="button" value="简体中文">
                     <input type="button" value="English" class="change">
                 </div>
-
             </li>
-
-
         </sto-header>
-        <div class="topscan">
-            <div class="toptitle">
-                <span><i>图</i>全网概览</span>
-            </div>
-<!--            这里用v-for-->
-           <div class="itembox">
-               <div class="scanitem">
-                    <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
-               <div class="scanitem active">
-                   <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
-               <div class="scanitem">
-                   <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
-               <div class="scanitem">
-               <span>40,132</span>
-               <p>L2区块高度</p>
-           </div>
-               <div class="scanitem">
-               <span>40,132</span>
-               <p>L2区块高度</p>
-           </div>
-               <div class="scanitem">
-                   <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
-               <div class="scanitem">
-                   <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
-               <div class="scanitem">
-                   <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
-               <div class="scanitem">
-                   <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
-               <div class="scanitem">
-                   <span>40,132</span>
-                   <p>L2区块高度</p>
-               </div>
+        <el-row class="scancnt">
+            <el-col :span="24"><div class="grid-content bg-purple-dark">
+                <div class="more800">
+                    <el-row>
+                        <el-col :span="24"><i class="net"><img src="~assets/exchangeImg/net.png" alt=""></i>全网概览</el-col>
+                    </el-row>
+                    <el-row :gutter="25" style="display: flex; flex-wrap: nowrap">
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,31242349328432
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                    </el-row>
+                    <el-row :gutter="25" style="display: flex;">
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="5"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                    </el-row>
+                </div>
+                <div class="less800">
+                    <el-row>
+                        <el-col :span="24"><i class="net"><img src="~assets/exchangeImg/net.png" alt=""></i>全网概览</el-col>
+                    </el-row>
+                    <el-row :gutter="25" style="display: flex; flex-wrap: nowrap" v-for="item in 4">
+                        <el-col :span="12"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,31242349328432
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                        <el-col :span="12"><div class="grid-content bg-purple">
+                            <div class="item">
+                                <h2 style="">
+                                    40,312
+                                </h2>
+                                <span>L2区块高度</span>
+                            </div>
+                        </div></el-col>
+                    </el-row>
 
-           </div>
-            <div class="arrow">
-                <span></span>
-            </div>
-        </div>
+                </div>
+            </div></el-col>
+        </el-row>
+        <ex-title>
+           <li slot="slot1" class="dataimg"><img src="~assets/exchangeImg/Frame_2.png" alt=""><span>交易对</span></li>
+        </ex-title>
+        <ex-change></ex-change>
+        <ex-title>
+            <li slot="slot1" class="dataimg"><img src="~assets/exchangeImg/Frame_2.png" alt=""><span>交易对</span></li>
+        </ex-title>
+        <ex-change></ex-change>
+        <ex-title>
+            <li slot="slot1" class="dataimg"><img src="~assets/exchangeImg/Frame_2.png" alt=""><span>交易对</span></li>
+        </ex-title>
+        <ex-change></ex-change>
+        <sot-footer></sot-footer>
     </div>
+
+
+
 </template>
 
 <script>
     import stoHeader from "components/common/stoHeader";
+    import dTable from "../deal/dTable";
+    import sotFooter from "components/common/sotFooter";
+    import exTitle from "../exchange/exTitle";
+    import exChange from "../exchange/exChange";
   export default {
     name: "sotScan",
     components: {
-      stoHeader
+      stoHeader,dTable,sotFooter,exTitle,exChange
     }
   }
 </script>
 
 <style scoped lang="less">
+
+    .bg-purple {
+        border-radius: 10px;
+        background-color: #fff;
+        height: 100%;
+        transition: all 1s;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.06);
+    }
     .active {
         background: linear-gradient(135deg,#191d6b, #11549b);
         color: #fff;
@@ -95,14 +186,18 @@
 
     }
 
+
+
+
     /*语言选择*/
     .dragdownList {
         display: flex;
         flex-wrap: wrap;
+        z-index: 10;
         position: absolute;
-        top: 90px;
-        width: 100px;
-        height: 80px;
+        top: .9rem;
+        width: 1rem;
+        height: .8rem;
         background-color: #fff;
         box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.10), 0px 0px 4px 0px rgba(0,0,0,0.10);
         &::after {
@@ -123,7 +218,6 @@
             width: 100%;
         }
     }
-
     .mainnet button{
         display: inline-block;
         padding: 8px 15px;
@@ -148,76 +242,117 @@
             color: #efefef;
         }
     }
-
-    .sotscsan {
-        background-color: #FEFEFE;
-
+    .dataimg {
+        img {
+            vertical-align: middle;
+            margin-right: 6px;
+        }
     }
-    .topscan {
-        font-size: 18px;
-        font-family: PingFang SC, PingFang SC-Medium;
-        /*position: absolute;*/
-        /*left: 60px;*/
-        /*right: 60px;*/
-        margin-left: 50px;
-        margin-right: 60px;
-        margin-top: 36px;
-        box-sizing: border-box;
-        .itembox {
-            width: 100%;
-            margin-top: 12px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .scanitem{
+
+    /*--------------------*/
 
 
-                /*float: left;*/
-                width: 340px;
-                height: 100px;
-                border-radius: 10px;
-                background-color: #fff;
-                /*margin-right: 22px;*/
-                margin-bottom: 25px;
+    /*当屏幕大于800时*/
+    @media (min-width: 1000px){
+        .more800 {
+            display: block;
+        }
+        .less800 {
+            display: none;
+        }
+        .scancnt {
+            margin-top: .36rem;
+            margin-left: .3rem;
+            margin-right: .3rem;
+            background-color: #fefefe;
+            font-family: PingFang SC, PingFang SC-Bold;
+            font-size: .16rem;
+            .net {
+                img {
+                    vertical-align: middle;
+                    margin-top: -3px;
+                    margin-right: 6px;
+                }
+            }
+            .el-row {
+                margin-bottom: .25rem;
+                &:first-child {
+                    margin-bottom: .13rem;
+                }
+
+                .el-col {
+
+                }
+            }
+            .item {
+                word-break: break-all;
                 text-align: center;
-                /*opacity: .9;*/
-                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.06);
-                /*&:nth-child(5n) {*/
-                /*     margin-right: 0;*/
-                /* }*/
-                span {
-                    font-size: 18px;
-                    font-weight: bold;
-                    line-height: 59px;
+                line-height: .28rem;
+                padding: .22rem .22rem .22rem .22rem;
+                h2 {
+                    font-size: .18rem;
+                    font-weight: 400;
+                    color:#333333
                 }
-                p {
-                    font-size: 14px;
-                    color: #999999
-                }
-
-
-
             }
+
         }
-
-        .arrow {
-            text-align: center;
-            margin-top: -24px;
-            span {
-                display: inline-block;
-                width: 28px;
-                height: 24px;
-                opacity: 1;
-                line-height: -10px;
-                transform: rotateZ(-30deg) skewX(30deg);
-                border: 1px solid #c4c4c4;
-                border-top: none;
-                border-right: none;
-
-
-            }
-        }
-
 
     }
+        /*当屏幕宽度小于800px时候*/
+    @media (max-width: 999px){
+        .more800 {
+            display: none;
+        }
+        .less800 {
+            display: block;
+        }
+        .hea {
+            font-size: .12rem;
+        }
+
+
+
+        .scancnt {
+            margin-top: .36rem;
+            margin-left: .3rem;
+            margin-right: .3rem;
+            background-color: #fefefe;
+            font-family: PingFang SC, PingFang SC-Bold;
+            font-size: .16rem;
+            .net {
+                img {
+                    vertical-align: middle;
+                    margin-top: -3px;
+                    margin-right: 6px;
+                }
+            }
+            .el-row {
+                margin-bottom: .25rem;
+                &:first-child {
+                    margin-bottom: .13rem;
+                }
+
+                .el-col {
+
+                }
+            }
+            .item {
+                word-break: break-all;
+                text-align: center;
+                line-height: .28rem;
+                padding: .22rem .22rem .22rem .22rem;
+                h2 {
+                    font-size: .18rem;
+                    font-weight: 400;
+                    color:#333333
+                }
+            }
+
+        }
+    }
+
+
+
+
 </style>

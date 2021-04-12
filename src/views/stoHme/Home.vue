@@ -18,24 +18,31 @@
   import timeAxios from "./childcomponents/timeAxios";
   export default {
     name: "index",
+    data() {
+      return{
+        dialogVisible:false
+      }
+    },
     components:{
       stoHeader,
       stoBanner,
       sotContent,
       sotFooter,
       makeUl,
-      timeAxios
+      timeAxios,
+
 
     }
 
   }
 </script>
 
-<style scoped>
+<style scoped lang="less">
     .sto-home {
         width: 100%;
         min-width: 1200px;
         height: 100px;
+
     }
 
 </style>

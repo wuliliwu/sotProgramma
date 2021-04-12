@@ -7,6 +7,9 @@
 
 <style lang="less">
 
+  html {
+    font-size: 100px;
+  }
   @import "assets/css/normalize.css";
   * {
     margin: 0;
@@ -14,13 +17,9 @@
   }
 #app {
   font-family: "PingFang SC", Helvetica, Arial, sans-serif;
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
-  /*text-align: center;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
 }
 li {
+  text-decoration: none;
   list-style: none;
 }
 /*版心*/

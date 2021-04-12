@@ -1,8 +1,6 @@
 <template>
     <div class="social">
-        <sto-header>
-
-        </sto-header>
+        <sto-header></sto-header>
         <div class="allcontent">
             <div class="social-cnt">
                 <div class="titleLink">
@@ -104,8 +102,6 @@
 
                 </div>
             </div>
-
-            <commit-cpn></commit-cpn>
             <commit-cpn></commit-cpn>
         </div>
     </div>
@@ -131,10 +127,12 @@
     }
     .allcontent {
         font-family: "PingFang SC", Helvetica, Arial, sans-serif!important;
-        float: right;
         display: flex;
         margin-top: 40px;
-        margin-right: .02%;
+        margin-left: 200px;
+        margin-right: 200px;
+        justify-content: space-evenly;
+
 
     }
     .social-cnt {
@@ -143,7 +141,8 @@
         box-sizing: border-box;
         font-size: 18px;
         width: 800px;
-        height: 800px;
+        min-width: 340px;
+        /*height: 800px;*/
         margin-right: 40px;
         opacity: 1;
         background: #ffffff;

@@ -10,7 +10,7 @@ body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,th,td,dl,dd,fieldset,legend,input,textarea,sel
 } */
 body,html {
 
-  font-size: calc(100vw / 1020 * 100);
+  font-size:100px;
   height: 100%;
 
 }

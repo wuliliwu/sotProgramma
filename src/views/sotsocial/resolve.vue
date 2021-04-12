@@ -18,14 +18,13 @@
 
 <style scoped lang="less">
 .resolve {
-
     width: 100%;
-    height: 70px;
-    opacity: 0.3;
-    background: #f9f9f9;
+    /*height: 70px;*/
+    background: rgba(249,249,249,1);
     border: 1px solid #c4c4c4;
     border-radius: 11px;
     padding: 13px 18px;
+    opacity: .7;
     box-sizing: border-box;
 }
     .top {
@@ -34,7 +33,7 @@
         box-sizing: border-box;
         span:first-child {
             font-size: 13px;
-            color: #38A169;
+            color: #0fdc6e;
         }
         span:last-child {
             font-size: 12px;
